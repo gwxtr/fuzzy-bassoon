@@ -1,0 +1,10 @@
+- code is not documented
+- everything is written in main method, it would be better to have class representing program that is run from main method
+- main throws FileNotFoundException, it should handle it and inform user in a friendly way
+- main method is too long
+- either not initialize line variable on line 8 or don't assign it on line 17
+- instead of while loop, do-while can be used which elimite need for initial line read (lines 14-18)
+- dir.listFiles() on line 39 can return null which will produce NullPointerException on next line
+- files listed at the end are all files in directory, not just created files, which can be missleading to user
+- output file is created even if no input provided
+- scanner is not closed
